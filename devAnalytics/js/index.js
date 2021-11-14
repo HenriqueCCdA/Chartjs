@@ -1,14 +1,17 @@
 let ctx = document.getElementById('chart').getContext('2d');
 
+let data = [0, 10, 5, 2, 20, 30, 45];
+let labels = ["January", "February", "March", "April", "May", "June", "July"];
+
 let chart = new Chart(ctx, {
     type: 'line',
     data:{
-        labels: ["January", "February", "March", "April", "May", "June", "July"],
+        labels: labels,
         datasets: [{
             label: "My First dataset",
             backgroundColor: 'rgb(41, 128, 185)',
             borderColor: 'rgb(41, 128, 185)',
-            data: [0, 10, 5, 2, 20, 30, 45],
+            data: data,
         }],
     },
 
