@@ -8,7 +8,7 @@ let chart = new Chart(ctx, {
     data:{
         labels: labels,
         datasets: [{
-            label: "My First dataset",
+            label: "Dataset",
             backgroundColor: 'rgb(41, 128, 185)',
             borderColor: 'rgb(41, 128, 185)',
             data: data,
@@ -30,7 +30,7 @@ let chart = new Chart(ctx, {
         },
         plugins: {
             title: {
-                display: true,
+                display: false,
                 text: 'Sales by Months',
                 fontSize: 20,
             },
